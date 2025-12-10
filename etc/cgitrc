@@ -1,0 +1,57 @@
+#
+# cgit Runtime Configuration
+# see cgitrc(5) for details
+
+#
+# General options
+root-title=Git Repository Browser
+root-desc=a fast webinterface for the git dscm
+robots=noindex, nofollow
+scan-path=/srv/git
+source-filter=/opt/highlight.sh
+
+#
+# Site options
+enable-index-links=1
+enable-remote-branches=1
+enable-log-filecount=1
+enable-log-linecount=1
+enable-git-config=1
+snapshots=tar.gz tar.bz2 zip
+
+#
+# Cache
+cache-root=/var/cache/cgit
+cache-size=1000
+
+#
+# Search for these files in the root of the default branch of repos.
+# This will determine the "about" page for the repo.
+readme=:README.md
+readme=:readme.md
+readme=:README.mkd
+readme=:readme.mkd
+readme=:README.rst
+readme=:readme.rst
+readme=:README.html
+readme=:readme.html
+readme=:README.htm
+readme=:readme.htm
+readme=:README.txt
+readme=:readme.txt
+readme=:README
+readme=:readme
+readme=:INSTALL.md
+readme=:install.md
+readme=:INSTALL.mkd
+readme=:install.mkd
+readme=:INSTALL.rst
+readme=:install.rst
+readme=:INSTALL.html
+readme=:install.html
+readme=:INSTALL.htm
+readme=:install.htm
+readme=:INSTALL.txt
+readme=:install.txt
+readme=:INSTALL
+readme=:install
