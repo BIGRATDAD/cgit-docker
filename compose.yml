@@ -1,0 +1,17 @@
+#
+#
+# cgit-docker compose example
+
+name: 'cgit-docker'
+
+services:
+  cgit:
+    container_name: cgit-docker
+    image: ratdad/cgit-docker:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./etc/httpd/conf/httpd.conf:/etc/httpd/conf/httpd.conf # apply custom httpd config
+      - ./etc/cgitrc:/etc/cgitrc # apply custom cgit runtime config
+      - ./opt/highlight.sh:/opt/highlight.sh # use a custom highlight script
+      - ./srv/git/:/srv/git # mount the dir cgit reads for repositories
